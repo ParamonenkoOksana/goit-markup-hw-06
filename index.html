@@ -480,7 +480,26 @@
             </li>
           </ul>
         </div>
+        <div class="distribution">
+          <strong class="distribution-text">Подпишитесь на рассылку</strong>
+          <form class="distribution-form">
+            <div class="distribution-group">
+              <input
+                type="email"
+                name="email-footer"
+                placeholder="E-mail"
+                class="footer-mail-input"
+              />
+              <button type="submit" class=" footer-email button"> Подписаться
+              <svg class="footer-letter-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-letter"></use>
+              </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
+
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -489,6 +508,73 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+
+        <form class="modal-form">
+          <div class="input-field">
+            <label class="input-title">Имя</label>
+            <div class="input-wrap">
+              <input type="text" class="form-input" name="user-name" required />
+              <svg class="input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="input-field">
+            <label class="input-title">Телефон</label>
+            <div class="input-wrap">
+              <input type="tel" minlength="12" class="form-input" name="user-tel" required />
+              <svg class="input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="input-field">
+            <label class="input-title">Почта</label>
+            <div class="input-wrap">
+              <input type="email" class="form-input" name="user-email" />
+
+              <svg class="input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="input-comment">
+            <label for="user-comment" class="input-title">Комментарий</label>
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              class="comment-text"
+              placeholder="Введите текст"
+              required
+            >
+            </textarea>
+          </div>
+
+          <div class="input-field">
+            <input
+              type="checkbox"
+              name="user-policy"
+              value="true"
+              class="input-check visually-hidden"
+              id="user-policy"
+            />
+            <label for="user-policy" class="check-text"
+              ><span
+                ><svg class="check-icon" width="16" height="15">
+                  <use href="./images/icons.svg#check-icon1"></use>
+                </svg>
+              </span>
+              Соглашаюсь с рассылкой и принимаю
+              <a href="#" class="input-contract link">Условия договора </a>
+            </label>
+          </div>
+
+          <button type="submit" class="button input-button">Отправить</button>
+        </form>
       </div>
     </div>
 
